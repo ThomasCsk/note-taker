@@ -10,7 +10,9 @@ app.use(express.static('public'));
 
 const PORT = process.env.PORT || 3001;
 
-//app.get()
+app.get('/api/notes', (req,res) => {
+  res.json(notes);
+})
 
 //app.post()
 
